@@ -5,8 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Segmentation</title>
+  <style>
+  </style>
+  {% include 'bootstrap.html' %}
 </head>
 <body>
-  <p>lorem ipsum</p>
+  {%include 'navbar.html' %}
+  <div>
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">Image Segementation</h1><hr>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">This is the first end-to-end machine learning project deployed by me and the main purpose of this website is to classify the image based on the provided characteristics.</p>
+      </div>
+      <div class="overflow-hidden" style="max-height:30vh;">
+      </div>
+    </div>
+  </div>
+ {%include 'prediction.html' %}
+ {%include 'footer.html' %}
 </body>
 </html>
