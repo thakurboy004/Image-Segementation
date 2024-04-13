@@ -1,169 +1,203 @@
 <h3 class='text-center bold grey'>Prediction Table</h3>
+<form action="{{ url_for("predicting")}}" method="post">
 <div class="row g-3 align-items-center">
   <!-- 1 -->
 <div class="col-auto">
   <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label><br>
+    <label for="REGION-CENTROID-COL" class="col-form-label">REGION-CENTROID-COL</label><br>
   </div>
   <div class="col-auto">
-    <input type="number"  class="form-control" >
+    <input type="number"  class="form-control" id="REGION-CENTROID-COL" name="REGION-CENTROID-COL" placeholder="Enter Region Centroid Column" min="0" 
+      max="1000" step="0.01">
   </div>
 </div>
   <!-- 2 -->
 <div class="col-auto">
   <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label><br>
+    <label for="REGION-CENTROID-ROW" class="col-form-label">REGION-CENTROID-ROW</label><br>
   </div>
   <div class="col-auto">
-    <input type="number"  class="form-control" >
+    <input type="number"  class="form-control" id="REGION-CENTROID-ROW" name="REGION-CENTROID-ROW" placeholder="Enter Region Centroid Row" min="0" 
+      max="1000" step="0.01">
   </div>
 </div>
 <!-- 3 -->
 <div class="col-auto">
   <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label><br>
+    <label for="REGION-PIXEL-COUNT" class="col-form-label">REGION-PIXEL-COUNT</label><br>
   </div>
   <div class="col-auto">
-    <input type="number"  class="form-control" >
+    <input type="number"  class="form-control" id="REGION-PIXEL-COUNT" name="REGION-PIXEL-COUNT" placeholder="Enter Region Pixel Count" min="0" 
+      max="1000" step="0.01">
   </div>
 </div>
 <!-- 4 -->
 <div class="col-auto">
   <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label><br>
+    <label for="SHORT-LINE-DENSITY-5" class="col-form-label">SHORT-LINE-DENSITY-5</label><br>
   </div>
   <div class="col-auto">
-    <input type="number"  class="form-control" >
+    <input type="number"  class="form-control" id="SHORT-LINE-DENSITY-5" name="SHORT-LINE-DENSITY-5" placeholder="Enter Short Line Density 5" min="0" 
+      max="1000" step="0.01">
   </div>
 </div>
 <!-- 5 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="SHORT-LINE-DENSITY-2" class="col-form-label">SHORT-LINE-DENSITY-2</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="SHORT-LINE-DENSITY-2" name="SHORT-LINE-DENSITY-2" placeholder="Enter Short Line Density 2" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 6 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="VEDGE-MEAN" class="col-form-label">VEDGE-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="VEDGE-MEAN" name="VEDGE-MEAN" placeholder="Enter Vedge Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 7 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="VEDGE-SD" class="col-form-label">VEDGE-SD</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="VEDGE-SD" name="VEDGE-SD" placeholder="Enter Vedge SD" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 8 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="HEDGE-MEAN" class="col-form-label">HEDGE-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="HEDGE-MEAN" name="HEDGE-MEAN" placeholder="Enter Hedge Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 9 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="HEDGE-SD" class="col-form-label">HEDGE-SD</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="HEDGE-SD" name="HEDGE-SD" placeholder="Enter Hedge SD" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 10 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="INTENSITY-MEAN" class="col-form-label">INTENSITY-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="INTENSITY-MEAN" name="INTENSITY-MEAN" placeholder="Enter Intensity Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 11 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="RAWRED-MEAN" class="col-form-label">RAWRED-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="RAWRED-MEAN" name="RAWRED-MEAN" placeholder="Enter Rawred Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 12 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="RAWBLUE-MEAN" class="col-form-label">RAWBLUE-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="RAWBLUE-MEAN" name="RAWBLUE-MEAN" placeholder="Enter Rawblue Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 13 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="RAWGREEN-MEAN" class="col-form-label">RAWGREEN-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="RAWGREEN-MEAN" name="RAWGREEN-MEAN" placeholder="Enter Rawgreen Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 14 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="EXRED-MEAN" class="col-form-label">EXRED-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="EXRED-MEAN" name="EXRED-MEAN" placeholder="Enter Exred Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 15 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="EXBLUE-MEAN" class="col-form-label">EXBLUE-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="EXBLUE-MEAN" name="EXBLUE-MEAN" placeholder="Enter Exblue Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 16 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="EXGREEN-MEAN" class="col-form-label">EXGREEN-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="EXGREEN-MEAN" name="EXGREEN-MEAN" placeholder="Enter Exgreen Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 17 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="VALUE-MEAN" class="col-form-label">VALUE-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" id="inputPassword6">
+      <input type="number"  class="form-control" id="VALUE-MEAN" name="VALUE-MEAN" placeholder="Enter Value Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 <!-- 18 -->
   <div class="col-auto">
     <div class="col-auto">
-      <label for="inputPassword6" class="col-form-label">Password</label><br>
+      <label for="SATURATION-MEAN" class="col-form-label">SATURATION-MEAN</label><br>
     </div>
     <div class="col-auto">
-      <input type="number"  class="form-control" >
+      <input type="number"  class="form-control" id="SATURATION-MEAN" name="SATURATION-MEAN" placeholder="Enter Saturation Mean" min="0" 
+        max="1000" step="0.01">
     </div>
   </div>
 
-<div>
+<!-- 19 -->
+  <div class="col-auto">
+    <div class="col-auto">
+      <label for="HUE-MEAN" class="col-form-label">HUE-MEAN</label><br>
+    </div>
+    <div class="col-auto">
+      <input type="number"  class="form-control" id="HUE-MEAN" name="HUE-MEAN" placeholder="Enter Hue Mean" min="0" 
+        max="1000" step="0.01">
+    </div>
+  </div>
+
+<div style="display:flex; justify-content:center;">
   <button type="submit" class="btn btn-primary col-3" style="display:flex; justify-content:center;">Predict</button>
 </div>
+</div>
+</form>
+<div class = "bold">
+ <h4> {{prediction_text}} </h4>
 </div>

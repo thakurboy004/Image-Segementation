@@ -9,6 +9,8 @@ packages = [{include = "repl_nix_image_segementation"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.3"
+numpy = "^1.26.4"
+scikit-learn = "^1.4.2"
 
 
 [build-system]
