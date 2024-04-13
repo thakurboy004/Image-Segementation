@@ -1,5 +1,5 @@
 Flask==3.0.3
-Werkzeug
 scikit-learn == 1.2.2
 pickle
 numpy
+gunicorn
