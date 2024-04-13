@@ -1,5 +1,5 @@
 <h3 class='text-center bold grey'>Prediction Table</h3>
-<form action="{{ url_for("predicting")}}" method="post">
+<form action="{{ url_for('predicting')}}" method="post">
 <div class="row g-3 align-items-center">
   <!-- 1 -->
 <div class="col-auto">
@@ -198,6 +198,6 @@
 </div>
 </div>
 </form>
-<div class = "bold">
- <h4> {{prediction_text}} </h4>
+<div class = "">
+ <h4 class="fw-bolder"> {{prediction_text}} </h4>
 </div>
