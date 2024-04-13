@@ -3,3 +3,4 @@ Werkzeug
 scikit-learn == 1.2.2
 pickle
 numpy
+python3==3.10.13
