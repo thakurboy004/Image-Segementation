@@ -8,6 +8,7 @@ app = Flask(__name__)
 def first_project():
   return render_template("home.html")
 
+
 @app.route("/predicting", methods=["GET", "POST"])
 def predicting():
   if request.method == "POST":
@@ -34,5 +35,5 @@ def predicting():
     ]
     prediction = predict(input_data)
     return render_template("home.html", prediction_text=prediction)
-  return "Method Not Allowed"
-
+  else:
+    return render_template("home.html")
